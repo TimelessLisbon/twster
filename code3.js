@@ -53,7 +53,7 @@ if (gdjs.instrucoes_95sexyCode.condition1IsTrue_0.val) {
 {for(var i = 0, len = gdjs.instrucoes_95sexyCode.GDstartObjects1.length ;i < len;++i) {
     gdjs.instrucoes_95sexyCode.GDstartObjects1[i].setAnimation(0);
 }
-}{gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "jogo", false);
+}{gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "jogosexy", false);
 }}
 
 }
