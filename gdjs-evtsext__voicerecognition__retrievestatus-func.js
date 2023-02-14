@@ -11,7 +11,7 @@ gdjs.evtsExt__VoiceRecognition__RetrieveStatus.conditionTrue_0 = {val:false};
 gdjs.evtsExt__VoiceRecognition__RetrieveStatus.condition0IsTrue_0 = {val:false};
 
 
-gdjs.evtsExt__VoiceRecognition__RetrieveStatus.userFunc0x847e18 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__VoiceRecognition__RetrieveStatus.userFunc0x6ffe98 = function(runtimeScene, eventsFunctionContext) {
 "use strict";
 eventsFunctionContext.returnValue = gdjs._extensionVoiceRecognition.getStatus();
 };
@@ -38,7 +38,7 @@ gdjs.evtsExt__VoiceRecognition__RetrieveStatus.eventsList0 = function(runtimeSce
 {
 
 
-gdjs.evtsExt__VoiceRecognition__RetrieveStatus.userFunc0x847e18(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__VoiceRecognition__RetrieveStatus.userFunc0x6ffe98(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 

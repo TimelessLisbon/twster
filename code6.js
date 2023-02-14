@@ -372,7 +372,7 @@ gdjs.jogostripCode.condition0IsTrue_0.val = false;
 gdjs.jogostripCode.condition0IsTrue_0.val = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getScene().getVariables().get("ler")) == 1;
 }if (gdjs.jogostripCode.condition0IsTrue_0.val) {
 gdjs.copyArray(runtimeScene.getObjects("ordem"), gdjs.jogostripCode.GDordemObjects1);
-{gdjs.evtsExt__TextToSpeech__Speak.func(runtimeScene, (( gdjs.jogostripCode.GDordemObjects1.length === 0 ) ? "" :gdjs.jogostripCode.GDordemObjects1[0].getString()), "Joana", 100, 100, 0, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
+{gdjs.evtsExt__TextToSpeech__Speak.func(runtimeScene, (( gdjs.jogostripCode.GDordemObjects1.length === 0 ) ? "" :gdjs.jogostripCode.GDordemObjects1[0].getString()), "Joana", 100, 75, 15, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
 }{runtimeScene.getScene().getVariables().get("ler").setNumber(0);
 }{gdjs.evtTools.runtimeScene.resetTimer(runtimeScene, "voice");
 }}

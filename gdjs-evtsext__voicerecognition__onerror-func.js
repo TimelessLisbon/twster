@@ -11,7 +11,7 @@ gdjs.evtsExt__VoiceRecognition__OnError.conditionTrue_0 = {val:false};
 gdjs.evtsExt__VoiceRecognition__OnError.condition0IsTrue_0 = {val:false};
 
 
-gdjs.evtsExt__VoiceRecognition__OnError.userFunc0x84bdf0 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__VoiceRecognition__OnError.userFunc0x85ca60 = function(runtimeScene, eventsFunctionContext) {
 "use strict";
 eventsFunctionContext.returnValue = gdjs._extensionVoiceRecognition.errorStatus;
 };
@@ -29,7 +29,7 @@ gdjs.evtsExt__VoiceRecognition__OnError.eventsList0 = function(runtimeScene, eve
 {
 
 
-gdjs.evtsExt__VoiceRecognition__OnError.userFunc0x84bdf0(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__VoiceRecognition__OnError.userFunc0x85ca60(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 

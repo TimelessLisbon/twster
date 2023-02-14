@@ -237,7 +237,7 @@ gdjs.jogoCode.condition0IsTrue_0.val = gdjs.evtTools.variable.getVariableNumber(
 }if (gdjs.jogoCode.condition0IsTrue_0.val) {
 gdjs.copyArray(runtimeScene.getObjects("cor"), gdjs.jogoCode.GDcorObjects1);
 gdjs.copyArray(runtimeScene.getObjects("membro"), gdjs.jogoCode.GDmembroObjects1);
-{gdjs.evtsExt__TextToSpeech__Speak.func(runtimeScene, (( gdjs.jogoCode.GDmembroObjects1.length === 0 ) ? "" :gdjs.jogoCode.GDmembroObjects1[0].getString()) + (( gdjs.jogoCode.GDcorObjects1.length === 0 ) ? "" :gdjs.jogoCode.GDcorObjects1[0].getString()), "Joana", 100, 100, 0, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
+{gdjs.evtsExt__TextToSpeech__Speak.func(runtimeScene, (( gdjs.jogoCode.GDmembroObjects1.length === 0 ) ? "" :gdjs.jogoCode.GDmembroObjects1[0].getString()) + (( gdjs.jogoCode.GDcorObjects1.length === 0 ) ? "" :gdjs.jogoCode.GDcorObjects1[0].getString()), "Joana", 100, 75, 15, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
 }{runtimeScene.getScene().getVariables().get("ler").setNumber(0);
 }{gdjs.evtTools.runtimeScene.resetTimer(runtimeScene, "voice");
 }}

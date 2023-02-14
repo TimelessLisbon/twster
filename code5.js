@@ -500,7 +500,7 @@ gdjs.jogosexyCode.condition0IsTrue_0.val = false;
 gdjs.jogosexyCode.condition0IsTrue_0.val = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getScene().getVariables().get("ler")) == 1;
 }if (gdjs.jogosexyCode.condition0IsTrue_0.val) {
 gdjs.copyArray(runtimeScene.getObjects("ordem"), gdjs.jogosexyCode.GDordemObjects1);
-{gdjs.evtsExt__TextToSpeech__Speak.func(runtimeScene, (( gdjs.jogosexyCode.GDordemObjects1.length === 0 ) ? "" :gdjs.jogosexyCode.GDordemObjects1[0].getString()), "Joana", 100, 100, 0, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
+{gdjs.evtsExt__TextToSpeech__Speak.func(runtimeScene, (( gdjs.jogosexyCode.GDordemObjects1.length === 0 ) ? "" :gdjs.jogosexyCode.GDordemObjects1[0].getString()), "Joana", 100, 75, 15, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
 }{runtimeScene.getScene().getVariables().get("ler").setNumber(0);
 }{gdjs.evtTools.runtimeScene.resetTimer(runtimeScene, "voice");
 }}

@@ -11,7 +11,7 @@ gdjs.evtsExt__TextToSpeech__onFirstSceneLoaded.conditionTrue_0 = {val:false};
 gdjs.evtsExt__TextToSpeech__onFirstSceneLoaded.condition0IsTrue_0 = {val:false};
 
 
-gdjs.evtsExt__TextToSpeech__onFirstSceneLoaded.userFunc0x727b98 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__TextToSpeech__onFirstSceneLoaded.userFunc0x6ffe98 = function(runtimeScene, eventsFunctionContext) {
 "use strict";
 // When calling getVoices, browsers return an empty list
 // while gathering the real list of available voices.
@@ -33,7 +33,7 @@ gdjs.evtsExt__TextToSpeech__onFirstSceneLoaded.eventsList0 = function(runtimeSce
 {
 
 
-gdjs.evtsExt__TextToSpeech__onFirstSceneLoaded.userFunc0x727b98(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__TextToSpeech__onFirstSceneLoaded.userFunc0x6ffe98(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 
