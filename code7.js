@@ -7,12 +7,17 @@ gdjs.jogoCode.GDcorObjects1= [];
 gdjs.jogoCode.GDcorObjects2= [];
 gdjs.jogoCode.GDvoiceObjects1= [];
 gdjs.jogoCode.GDvoiceObjects2= [];
+gdjs.jogoCode.GDinicioObjects1= [];
+gdjs.jogoCode.GDinicioObjects2= [];
 
 gdjs.jogoCode.conditionTrue_0 = {val:false};
 gdjs.jogoCode.condition0IsTrue_0 = {val:false};
 gdjs.jogoCode.condition1IsTrue_0 = {val:false};
+gdjs.jogoCode.condition2IsTrue_0 = {val:false};
 
 
+gdjs.jogoCode.mapOfGDgdjs_46jogoCode_46GDinicioObjects1Objects = Hashtable.newFrom({"inicio": gdjs.jogoCode.GDinicioObjects1});
+gdjs.jogoCode.mapOfGDgdjs_46jogoCode_46GDinicioObjects1Objects = Hashtable.newFrom({"inicio": gdjs.jogoCode.GDinicioObjects1});
 gdjs.jogoCode.eventsList0 = function(runtimeScene) {
 
 {
@@ -261,6 +266,51 @@ gdjs.copyArray(runtimeScene.getObjects("voice"), gdjs.jogoCode.GDvoiceObjects1);
 }
 
 
+{
+
+gdjs.copyArray(runtimeScene.getObjects("inicio"), gdjs.jogoCode.GDinicioObjects1);
+
+gdjs.jogoCode.condition0IsTrue_0.val = false;
+gdjs.jogoCode.condition1IsTrue_0.val = false;
+{
+gdjs.jogoCode.condition0IsTrue_0.val = gdjs.evtTools.input.cursorOnObject(gdjs.jogoCode.mapOfGDgdjs_46jogoCode_46GDinicioObjects1Objects, runtimeScene, true, false);
+}if ( gdjs.jogoCode.condition0IsTrue_0.val ) {
+{
+gdjs.jogoCode.condition1IsTrue_0.val = gdjs.evtTools.input.isMouseButtonPressed(runtimeScene, "Left");
+}}
+if (gdjs.jogoCode.condition1IsTrue_0.val) {
+/* Reuse gdjs.jogoCode.GDinicioObjects1 */
+{for(var i = 0, len = gdjs.jogoCode.GDinicioObjects1.length ;i < len;++i) {
+    gdjs.jogoCode.GDinicioObjects1[i].setAnimation(1);
+}
+}}
+
+}
+
+
+{
+
+gdjs.copyArray(runtimeScene.getObjects("inicio"), gdjs.jogoCode.GDinicioObjects1);
+
+gdjs.jogoCode.condition0IsTrue_0.val = false;
+gdjs.jogoCode.condition1IsTrue_0.val = false;
+{
+gdjs.jogoCode.condition0IsTrue_0.val = gdjs.evtTools.input.cursorOnObject(gdjs.jogoCode.mapOfGDgdjs_46jogoCode_46GDinicioObjects1Objects, runtimeScene, true, false);
+}if ( gdjs.jogoCode.condition0IsTrue_0.val ) {
+{
+gdjs.jogoCode.condition1IsTrue_0.val = gdjs.evtTools.input.isMouseButtonReleased(runtimeScene, "Left");
+}}
+if (gdjs.jogoCode.condition1IsTrue_0.val) {
+/* Reuse gdjs.jogoCode.GDinicioObjects1 */
+{for(var i = 0, len = gdjs.jogoCode.GDinicioObjects1.length ;i < len;++i) {
+    gdjs.jogoCode.GDinicioObjects1[i].setAnimation(0);
+}
+}{gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "inicio", false);
+}}
+
+}
+
+
 };
 
 gdjs.jogoCode.func = function(runtimeScene) {
@@ -274,6 +324,8 @@ gdjs.jogoCode.GDcorObjects1.length = 0;
 gdjs.jogoCode.GDcorObjects2.length = 0;
 gdjs.jogoCode.GDvoiceObjects1.length = 0;
 gdjs.jogoCode.GDvoiceObjects2.length = 0;
+gdjs.jogoCode.GDinicioObjects1.length = 0;
+gdjs.jogoCode.GDinicioObjects2.length = 0;
 
 gdjs.jogoCode.eventsList0(runtimeScene);
 

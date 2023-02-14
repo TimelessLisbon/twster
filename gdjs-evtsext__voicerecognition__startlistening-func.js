@@ -11,7 +11,7 @@ gdjs.evtsExt__VoiceRecognition__StartListening.conditionTrue_0 = {val:false};
 gdjs.evtsExt__VoiceRecognition__StartListening.condition0IsTrue_0 = {val:false};
 
 
-gdjs.evtsExt__VoiceRecognition__StartListening.userFunc0x770740 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__VoiceRecognition__StartListening.userFunc0x84bdf0 = function(runtimeScene, eventsFunctionContext) {
 "use strict";
 const Language = eventsFunctionContext.getArgument("language");
 
@@ -35,7 +35,7 @@ gdjs.evtsExt__VoiceRecognition__StartListening.eventsList0 = function(runtimeSce
 {
 
 
-gdjs.evtsExt__VoiceRecognition__StartListening.userFunc0x770740(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__VoiceRecognition__StartListening.userFunc0x84bdf0(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 

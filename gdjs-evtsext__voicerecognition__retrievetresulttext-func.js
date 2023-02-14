@@ -11,7 +11,7 @@ gdjs.evtsExt__VoiceRecognition__RetrievetResultText.conditionTrue_0 = {val:false
 gdjs.evtsExt__VoiceRecognition__RetrievetResultText.condition0IsTrue_0 = {val:false};
 
 
-gdjs.evtsExt__VoiceRecognition__RetrievetResultText.userFunc0x770740 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__VoiceRecognition__RetrievetResultText.userFunc0x6ee700 = function(runtimeScene, eventsFunctionContext) {
 "use strict";
 eventsFunctionContext.returnValue = gdjs._extensionVoiceRecognition.getResultText();
 };
@@ -38,7 +38,7 @@ gdjs.evtsExt__VoiceRecognition__RetrievetResultText.eventsList0 = function(runti
 {
 
 
-gdjs.evtsExt__VoiceRecognition__RetrievetResultText.userFunc0x770740(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__VoiceRecognition__RetrievetResultText.userFunc0x6ee700(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 

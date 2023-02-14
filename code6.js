@@ -5,12 +5,17 @@ gdjs.jogostripCode.GDordemObjects1= [];
 gdjs.jogostripCode.GDordemObjects2= [];
 gdjs.jogostripCode.GDvoiceObjects1= [];
 gdjs.jogostripCode.GDvoiceObjects2= [];
+gdjs.jogostripCode.GDinicioObjects1= [];
+gdjs.jogostripCode.GDinicioObjects2= [];
 
 gdjs.jogostripCode.conditionTrue_0 = {val:false};
 gdjs.jogostripCode.condition0IsTrue_0 = {val:false};
 gdjs.jogostripCode.condition1IsTrue_0 = {val:false};
+gdjs.jogostripCode.condition2IsTrue_0 = {val:false};
 
 
+gdjs.jogostripCode.mapOfGDgdjs_46jogostripCode_46GDinicioObjects1Objects = Hashtable.newFrom({"inicio": gdjs.jogostripCode.GDinicioObjects1});
+gdjs.jogostripCode.mapOfGDgdjs_46jogostripCode_46GDinicioObjects1Objects = Hashtable.newFrom({"inicio": gdjs.jogostripCode.GDinicioObjects1});
 gdjs.jogostripCode.eventsList0 = function(runtimeScene) {
 
 {
@@ -392,6 +397,51 @@ gdjs.copyArray(runtimeScene.getObjects("voice"), gdjs.jogostripCode.GDvoiceObjec
 }
 
 
+{
+
+gdjs.copyArray(runtimeScene.getObjects("inicio"), gdjs.jogostripCode.GDinicioObjects1);
+
+gdjs.jogostripCode.condition0IsTrue_0.val = false;
+gdjs.jogostripCode.condition1IsTrue_0.val = false;
+{
+gdjs.jogostripCode.condition0IsTrue_0.val = gdjs.evtTools.input.cursorOnObject(gdjs.jogostripCode.mapOfGDgdjs_46jogostripCode_46GDinicioObjects1Objects, runtimeScene, true, false);
+}if ( gdjs.jogostripCode.condition0IsTrue_0.val ) {
+{
+gdjs.jogostripCode.condition1IsTrue_0.val = gdjs.evtTools.input.isMouseButtonReleased(runtimeScene, "Left");
+}}
+if (gdjs.jogostripCode.condition1IsTrue_0.val) {
+/* Reuse gdjs.jogostripCode.GDinicioObjects1 */
+{for(var i = 0, len = gdjs.jogostripCode.GDinicioObjects1.length ;i < len;++i) {
+    gdjs.jogostripCode.GDinicioObjects1[i].setAnimation(0);
+}
+}{gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "inicio", false);
+}}
+
+}
+
+
+{
+
+gdjs.copyArray(runtimeScene.getObjects("inicio"), gdjs.jogostripCode.GDinicioObjects1);
+
+gdjs.jogostripCode.condition0IsTrue_0.val = false;
+gdjs.jogostripCode.condition1IsTrue_0.val = false;
+{
+gdjs.jogostripCode.condition0IsTrue_0.val = gdjs.evtTools.input.cursorOnObject(gdjs.jogostripCode.mapOfGDgdjs_46jogostripCode_46GDinicioObjects1Objects, runtimeScene, true, false);
+}if ( gdjs.jogostripCode.condition0IsTrue_0.val ) {
+{
+gdjs.jogostripCode.condition1IsTrue_0.val = gdjs.evtTools.input.isMouseButtonPressed(runtimeScene, "Left");
+}}
+if (gdjs.jogostripCode.condition1IsTrue_0.val) {
+/* Reuse gdjs.jogostripCode.GDinicioObjects1 */
+{for(var i = 0, len = gdjs.jogostripCode.GDinicioObjects1.length ;i < len;++i) {
+    gdjs.jogostripCode.GDinicioObjects1[i].setAnimation(1);
+}
+}}
+
+}
+
+
 };
 
 gdjs.jogostripCode.func = function(runtimeScene) {
@@ -403,6 +453,8 @@ gdjs.jogostripCode.GDordemObjects1.length = 0;
 gdjs.jogostripCode.GDordemObjects2.length = 0;
 gdjs.jogostripCode.GDvoiceObjects1.length = 0;
 gdjs.jogostripCode.GDvoiceObjects2.length = 0;
+gdjs.jogostripCode.GDinicioObjects1.length = 0;
+gdjs.jogostripCode.GDinicioObjects2.length = 0;
 
 gdjs.jogostripCode.eventsList0(runtimeScene);
 

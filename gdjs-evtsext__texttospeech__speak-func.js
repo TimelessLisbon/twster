@@ -11,7 +11,7 @@ gdjs.evtsExt__TextToSpeech__Speak.conditionTrue_0 = {val:false};
 gdjs.evtsExt__TextToSpeech__Speak.condition0IsTrue_0 = {val:false};
 
 
-gdjs.evtsExt__TextToSpeech__Speak.userFunc0x770740 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__TextToSpeech__Speak.userFunc0x727b98 = function(runtimeScene, eventsFunctionContext) {
 "use strict";
 if (!window.speechSynthesis || !window.SpeechSynthesisUtterance) return;
 
@@ -63,7 +63,7 @@ gdjs.evtsExt__TextToSpeech__Speak.eventsList0 = function(runtimeScene, eventsFun
 {
 
 
-gdjs.evtsExt__TextToSpeech__Speak.userFunc0x770740(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__TextToSpeech__Speak.userFunc0x727b98(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 

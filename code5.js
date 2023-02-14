@@ -5,12 +5,17 @@ gdjs.jogosexyCode.GDordemObjects1= [];
 gdjs.jogosexyCode.GDordemObjects2= [];
 gdjs.jogosexyCode.GDvoiceObjects1= [];
 gdjs.jogosexyCode.GDvoiceObjects2= [];
+gdjs.jogosexyCode.GDinicioObjects1= [];
+gdjs.jogosexyCode.GDinicioObjects2= [];
 
 gdjs.jogosexyCode.conditionTrue_0 = {val:false};
 gdjs.jogosexyCode.condition0IsTrue_0 = {val:false};
 gdjs.jogosexyCode.condition1IsTrue_0 = {val:false};
+gdjs.jogosexyCode.condition2IsTrue_0 = {val:false};
 
 
+gdjs.jogosexyCode.mapOfGDgdjs_46jogosexyCode_46GDinicioObjects1Objects = Hashtable.newFrom({"inicio": gdjs.jogosexyCode.GDinicioObjects1});
+gdjs.jogosexyCode.mapOfGDgdjs_46jogosexyCode_46GDinicioObjects1Objects = Hashtable.newFrom({"inicio": gdjs.jogosexyCode.GDinicioObjects1});
 gdjs.jogosexyCode.eventsList0 = function(runtimeScene) {
 
 {
@@ -520,6 +525,51 @@ gdjs.copyArray(runtimeScene.getObjects("voice"), gdjs.jogosexyCode.GDvoiceObject
 }
 
 
+{
+
+gdjs.copyArray(runtimeScene.getObjects("inicio"), gdjs.jogosexyCode.GDinicioObjects1);
+
+gdjs.jogosexyCode.condition0IsTrue_0.val = false;
+gdjs.jogosexyCode.condition1IsTrue_0.val = false;
+{
+gdjs.jogosexyCode.condition0IsTrue_0.val = gdjs.evtTools.input.cursorOnObject(gdjs.jogosexyCode.mapOfGDgdjs_46jogosexyCode_46GDinicioObjects1Objects, runtimeScene, true, false);
+}if ( gdjs.jogosexyCode.condition0IsTrue_0.val ) {
+{
+gdjs.jogosexyCode.condition1IsTrue_0.val = gdjs.evtTools.input.isMouseButtonReleased(runtimeScene, "Left");
+}}
+if (gdjs.jogosexyCode.condition1IsTrue_0.val) {
+/* Reuse gdjs.jogosexyCode.GDinicioObjects1 */
+{for(var i = 0, len = gdjs.jogosexyCode.GDinicioObjects1.length ;i < len;++i) {
+    gdjs.jogosexyCode.GDinicioObjects1[i].setAnimation(0);
+}
+}{gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "inicio", false);
+}}
+
+}
+
+
+{
+
+gdjs.copyArray(runtimeScene.getObjects("inicio"), gdjs.jogosexyCode.GDinicioObjects1);
+
+gdjs.jogosexyCode.condition0IsTrue_0.val = false;
+gdjs.jogosexyCode.condition1IsTrue_0.val = false;
+{
+gdjs.jogosexyCode.condition0IsTrue_0.val = gdjs.evtTools.input.cursorOnObject(gdjs.jogosexyCode.mapOfGDgdjs_46jogosexyCode_46GDinicioObjects1Objects, runtimeScene, true, false);
+}if ( gdjs.jogosexyCode.condition0IsTrue_0.val ) {
+{
+gdjs.jogosexyCode.condition1IsTrue_0.val = gdjs.evtTools.input.isMouseButtonPressed(runtimeScene, "Left");
+}}
+if (gdjs.jogosexyCode.condition1IsTrue_0.val) {
+/* Reuse gdjs.jogosexyCode.GDinicioObjects1 */
+{for(var i = 0, len = gdjs.jogosexyCode.GDinicioObjects1.length ;i < len;++i) {
+    gdjs.jogosexyCode.GDinicioObjects1[i].setAnimation(1);
+}
+}}
+
+}
+
+
 };
 
 gdjs.jogosexyCode.func = function(runtimeScene) {
@@ -531,6 +581,8 @@ gdjs.jogosexyCode.GDordemObjects1.length = 0;
 gdjs.jogosexyCode.GDordemObjects2.length = 0;
 gdjs.jogosexyCode.GDvoiceObjects1.length = 0;
 gdjs.jogosexyCode.GDvoiceObjects2.length = 0;
+gdjs.jogosexyCode.GDinicioObjects1.length = 0;
+gdjs.jogosexyCode.GDinicioObjects2.length = 0;
 
 gdjs.jogosexyCode.eventsList0(runtimeScene);
 
