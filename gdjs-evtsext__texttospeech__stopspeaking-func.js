@@ -11,7 +11,7 @@ gdjs.evtsExt__TextToSpeech__StopSpeaking.conditionTrue_0 = {val:false};
 gdjs.evtsExt__TextToSpeech__StopSpeaking.condition0IsTrue_0 = {val:false};
 
 
-gdjs.evtsExt__TextToSpeech__StopSpeaking.userFunc0x7c2cd0 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__TextToSpeech__StopSpeaking.userFunc0x770740 = function(runtimeScene, eventsFunctionContext) {
 "use strict";
 window.speechSynthesis.cancel();
 
@@ -21,7 +21,7 @@ gdjs.evtsExt__TextToSpeech__StopSpeaking.eventsList0 = function(runtimeScene, ev
 {
 
 
-gdjs.evtsExt__TextToSpeech__StopSpeaking.userFunc0x7c2cd0(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__TextToSpeech__StopSpeaking.userFunc0x770740(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 

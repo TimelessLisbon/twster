@@ -11,7 +11,7 @@ gdjs.evtsExt__VoiceRecognition__onFirstSceneLoaded.conditionTrue_0 = {val:false}
 gdjs.evtsExt__VoiceRecognition__onFirstSceneLoaded.condition0IsTrue_0 = {val:false};
 
 
-gdjs.evtsExt__VoiceRecognition__onFirstSceneLoaded.userFunc0x769650 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__VoiceRecognition__onFirstSceneLoaded.userFunc0x770740 = function(runtimeScene, eventsFunctionContext) {
 "use strict";
 function VoiceRecognition() {
     this.errorStatus = false;
@@ -111,7 +111,7 @@ gdjs.evtsExt__VoiceRecognition__onFirstSceneLoaded.eventsList0 = function(runtim
 {
 
 
-gdjs.evtsExt__VoiceRecognition__onFirstSceneLoaded.userFunc0x769650(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__VoiceRecognition__onFirstSceneLoaded.userFunc0x770740(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 

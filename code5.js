@@ -20,9 +20,13 @@ gdjs.jogosexyCode.condition0IsTrue_0.val = false;
 {
 gdjs.jogosexyCode.condition0IsTrue_0.val = gdjs.evtTools.runtimeScene.sceneJustBegins(runtimeScene);
 }if (gdjs.jogosexyCode.condition0IsTrue_0.val) {
+gdjs.copyArray(runtimeScene.getObjects("ordem"), gdjs.jogosexyCode.GDordemObjects1);
 {gdjs.evtTools.runtimeScene.resetTimer(runtimeScene, "voice");
 }{runtimeScene.getScene().getVariables().get("ordem").setNumber(0);
 }{runtimeScene.getScene().getVariables().get("ler").setNumber(0);
+}{for(var i = 0, len = gdjs.jogosexyCode.GDordemObjects1.length ;i < len;++i) {
+    gdjs.jogosexyCode.GDordemObjects1[i].setString("");
+}
 }}
 
 }
@@ -504,8 +508,12 @@ gdjs.copyArray(runtimeScene.getObjects("ordem"), gdjs.jogosexyCode.GDordemObject
 
 {
 gdjs.copyArray(runtimeScene.getObjects("ordem"), gdjs.jogosexyCode.GDordemObjects1);
+gdjs.copyArray(runtimeScene.getObjects("voice"), gdjs.jogosexyCode.GDvoiceObjects1);
 {for(var i = 0, len = gdjs.jogosexyCode.GDordemObjects1.length ;i < len;++i) {
     gdjs.jogosexyCode.GDordemObjects1[i].setX((720 - (gdjs.jogosexyCode.GDordemObjects1[i].getWidth())) / 2);
+}
+}{for(var i = 0, len = gdjs.jogosexyCode.GDvoiceObjects1.length ;i < len;++i) {
+    gdjs.jogosexyCode.GDvoiceObjects1[i].setX((720 - (gdjs.jogosexyCode.GDvoiceObjects1[i].getWidth())) / 2);
 }
 }}
 

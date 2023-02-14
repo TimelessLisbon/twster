@@ -22,10 +22,18 @@ gdjs.jogoCode.condition0IsTrue_0.val = false;
 {
 gdjs.jogoCode.condition0IsTrue_0.val = gdjs.evtTools.runtimeScene.sceneJustBegins(runtimeScene);
 }if (gdjs.jogoCode.condition0IsTrue_0.val) {
+gdjs.copyArray(runtimeScene.getObjects("cor"), gdjs.jogoCode.GDcorObjects1);
+gdjs.copyArray(runtimeScene.getObjects("membro"), gdjs.jogoCode.GDmembroObjects1);
 {gdjs.evtTools.runtimeScene.resetTimer(runtimeScene, "voice");
 }{runtimeScene.getScene().getVariables().get("membro").setNumber(0);
 }{runtimeScene.getScene().getVariables().get("cor").setNumber(0);
 }{runtimeScene.getScene().getVariables().get("ler").setNumber(0);
+}{for(var i = 0, len = gdjs.jogoCode.GDcorObjects1.length ;i < len;++i) {
+    gdjs.jogoCode.GDcorObjects1[i].setString("");
+}
+}{for(var i = 0, len = gdjs.jogoCode.GDmembroObjects1.length ;i < len;++i) {
+    gdjs.jogoCode.GDmembroObjects1[i].setString("");
+}
 }}
 
 }
@@ -238,11 +246,15 @@ gdjs.copyArray(runtimeScene.getObjects("membro"), gdjs.jogoCode.GDmembroObjects1
 {
 gdjs.copyArray(runtimeScene.getObjects("cor"), gdjs.jogoCode.GDcorObjects1);
 gdjs.copyArray(runtimeScene.getObjects("membro"), gdjs.jogoCode.GDmembroObjects1);
+gdjs.copyArray(runtimeScene.getObjects("voice"), gdjs.jogoCode.GDvoiceObjects1);
 {for(var i = 0, len = gdjs.jogoCode.GDcorObjects1.length ;i < len;++i) {
     gdjs.jogoCode.GDcorObjects1[i].setX((720 - (gdjs.jogoCode.GDcorObjects1[i].getWidth())) / 2);
 }
 }{for(var i = 0, len = gdjs.jogoCode.GDmembroObjects1.length ;i < len;++i) {
     gdjs.jogoCode.GDmembroObjects1[i].setX((720 - (gdjs.jogoCode.GDmembroObjects1[i].getWidth())) / 2);
+}
+}{for(var i = 0, len = gdjs.jogoCode.GDvoiceObjects1.length ;i < len;++i) {
+    gdjs.jogoCode.GDvoiceObjects1[i].setX((720 - (gdjs.jogoCode.GDvoiceObjects1[i].getWidth())) / 2);
 }
 }}
 
